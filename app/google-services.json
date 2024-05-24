@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037871796153",
+    "project_id": "smpn1rembang-6b6e5",
+    "storage_bucket": "smpn1rembang-6b6e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037871796153:android:2ca7749721a2e16f94f068",
+        "android_client_info": {
+          "package_name": "com.example.eperpus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUxCgc44srAUn1vyDrEnYXWYaXuQ6cpF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

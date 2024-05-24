@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".DetailPinjamActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_buku"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvProfile"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herry Poter"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvKategoriText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Kategori : "
+                android:layout_marginTop="16dp"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
+
+            <TextView
+                android:id="@+id/tvKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sihir"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvKategoriText"
+                app:layout_constraintStart_toEndOf="@+id/tvKategoriText"
+                app:layout_constraintTop_toTopOf="@+id/tvKategoriText" />
+
+
+            <TextView
+                android:id="@+id/tvHalamanText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Halaman : "
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvKategoriText" />
+
+            <TextView
+                android:id="@+id/tvHalaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvHalamanText"
+                app:layout_constraintStart_toEndOf="@+id/tvHalamanText"
+                app:layout_constraintTop_toTopOf="@+id/tvHalamanText" />
+
+
+            <TextView
+                android:id="@+id/tvDescText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Deskripsi : "
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHalamanText" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="buku ini blablabla"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDescText"
+                app:layout_constraintStart_toEndOf="@+id/tvHalamanText"
+                app:layout_constraintTop_toTopOf="@+id/tvDescText" />
+
+            <EditText
+                android:id="@+id/edtDurasi"
+                android:layout_width="200dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:hint="masukan durasi (hari)"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescText" />
+
+            <Button
+                android:id="@+id/btnPinjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pinjam"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/edtDurasi"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
